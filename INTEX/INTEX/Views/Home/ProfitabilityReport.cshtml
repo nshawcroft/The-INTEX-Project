@@ -3,5 +3,112 @@
     ViewBag.Title = "ProfitabilityReport";
 }
 
-<h2>ProfitabilityReport</h2>
+<div class="container">
+    <div class="col-md-3">
+        <div class="form-group">
+            <br /><br /><br />
+            <h4><u>Date Range</u></h4>
+            Start Date <input class="form-control" style="width:150px" />
+            End Date <input class="form-control" style="width:150px"  />
+        </div>
+        <div class="form-group">
+            <h4><u>Display By</u></h4>
+            <div class="btn-group">
+                <div class="radio">
+                    <label class="active"><input type="radio" name="optradio" checked="">All</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio">Year</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio">Month</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio">Week</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio">Day</label>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h4><u>Group By</u></h4>
+            <div class="btn-group">
+                <div class="radio">
+                    <label><input type="radio" name="optradio">Assay</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio">Sales Rep</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio">Customer</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="optradio">None</label>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="col-md-9">
+        <h2>Monthly Sales/Profitability Report</h2>
+        <p style="font-size:12pt">Dates: (12/1/16 - 12/30/16)</p>
+        <br />
+
+        <table class="table-bordered table-striped" style="font-size:13pt">
+            <tr>
+                <th>Assay</th>
+                <th>Quantity</th>
+                <th>Total Revenue</th>
+                <th>Total Cost</th>
+                <th>Difference</th>
+                <th>Profit</th>
+            </tr>
+            <tr>
+                <td>Assay 1</td>
+                <td>40</td>
+                <td>$50,000</td>
+                <td>$0</td>
+                <td>$50,000</td>
+                <td><b>%100</b></td>
+            </tr>
+            <tr>
+                <td>Assay 2</td>
+                <td>40</td>
+                <td>$50,000</td>
+                <td>$0</td>
+                <td>$50,000</td>
+                <td><b>%100</b></td>
+            </tr>
+            <tr>
+                <td>Assay 3</td>
+                <td>40</td>
+                <td>$50,000</td>
+                <td>$0</td>
+                <td>$50,000</td>
+                <td><b>%100</b></td>
+            </tr>
+            <tr>
+                <td>Assay 4</td>
+                <td>40</td>
+                <td>$50,000</td>
+                <td>$0</td>
+                <td>$50,000</td>
+                <td><b>%100</b></td>
+            </tr>
+            <tr>
+                <td><b>Total</b></td>
+                <td>160</td>
+                <td>$200,000</td>
+                <td>$0</td>
+                <td>$200,000</td>
+                <td><b>%100</b></td>
+            </tr>
+        </table>
+        <br />
+        <button class="btn">Save PDF</button>
+        <button class="btn">Print</button>
+    </div>
+</div>
 
