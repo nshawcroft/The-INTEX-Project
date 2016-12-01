@@ -1,4 +1,4 @@
-﻿
+﻿<link href="~/Content/NateStyles.css" rel="stylesheet" />
 @{
     ViewBag.Title = "CustomerCurrentOrderDetails";
 }
@@ -10,18 +10,18 @@
     <div class="row">
         <br />
         <div class="col-md-2">
-            @Html.ActionLink("Back to Orders", "ReviewOrder", "Home", null, new { @class = " btn btn-default" })
+            @Html.ActionLink("Back to Orders", "ReviewOrder", "Home", null, new { @class = " btn btn-primary" })
+        </div>
+        <div class="col-md-4" style="font-size:12pt">
+            <p><b>Work Order ID: </b><u>12-550-3</u></p>
+            <p><b>Order Date: </b><u>4/14/17</u></p>
+            <p><b>Customer Name: </b><u>Acme Inc.</u></p>
+            <p><b>Date Received: </b><u>4/17/17</u></p>
+            <p><b>Estimated Completion Date: </b><u>5/4/17</u></p>
         </div>
         <div class="col-md-3" style="font-size:12pt">
-            <p>Work Order ID: <u>12-550-3</u></p>
-            <p>Order Date: <u>4/14/17</u></p>
-            <p>Customer Name: <u>Acme Inc.</u></p>
-            <p>Date Received: <u>4/17/17</u></p>
-            <p>Estimated Completion Date: <u>5/4/17</u></p>
-        </div>
-        <div class="col-md-3" style="font-size:12pt">
-            <p>Status: <u>Testing in Progress</u></p>
-            <p>Total Estimated Price: <u>4/14/17</u></p>
+            <p><b>Status: </b><u>Testing in Progress</u></p>
+            <p><b>Total Estimated Price: </b><u>4/14/17</u></p>
         </div>
     </div>
     <div class="row">

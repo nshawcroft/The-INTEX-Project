@@ -7,13 +7,13 @@
     <div class="col-md-3">
         <div class="form-group">
             <br /><br /><br />
-            <h4><u>Date Range</u></h4>
+            <h4><u>Date Range:</u></h4>
             Start Date <input class="form-control" style="width:150px" />
             End Date <input class="form-control" style="width:150px"  />
         </div>
         <div class="form-group">
-            <h4><u>Display By</u></h4>
-            <div class="btn-group">
+            <h4><u>Display By:</u></h4>
+            <div class="btn-group" id="group1">
                 <div class="radio">
                     <label class="active"><input type="radio" name="optradio" checked="">All</label>
                 </div>
@@ -32,8 +32,8 @@
             </div>
         </div>
         <div>
-            <h4><u>Group By</u></h4>
-            <div class="btn-group">
+            <h4><u>Group By:</u></h4>
+            <div class="btn-group" id="group2">
                 <div class="radio">
                     <label><input type="radio" name="optradio">Assay</label>
                 </div>
@@ -47,8 +47,9 @@
                     <label><input type="radio" name="optradio">None</label>
                 </div>
             </div>
+            
         </div>
-        
+        <button class="btn btn-primary">Create Report</button>
         
     </div>
     <div class="col-md-9">
@@ -107,8 +108,8 @@
             </tr>
         </table>
         <br />
-        <button class="btn">Save PDF</button>
-        <button class="btn">Print</button>
+        <button class="btn btn-primary">Save PDF</button>
+        <button class="btn btn-primary">Print</button>
     </div>
 </div>
 
