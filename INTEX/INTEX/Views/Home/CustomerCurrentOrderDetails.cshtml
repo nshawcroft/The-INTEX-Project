@@ -3,5 +3,44 @@
     ViewBag.Title = "CustomerCurrentOrderDetails";
 }
 
-<h2>CustomerCurrentOrderDetails</h2>
+<h2>View Order</h2>
 
+<div class="container">
+    
+    <div class="row">
+        <br />
+        <div class="col-md-2">
+            @Html.ActionLink("Back to Orders", "ReviewOrder", "Home", null, new { @class = " btn btn-default" })
+        </div>
+        <div class="col-md-3" style="font-size:12pt">
+            <p>Work Order ID: <u>12-550-3</u></p>
+            <p>Order Date: <u>4/14/17</u></p>
+            <p>Customer Name: <u>Acme Inc.</u></p>
+            <p>Date Received: <u>4/17/17</u></p>
+            <p>Estimated Completion Date: <u>5/4/17</u></p>
+        </div>
+        <div class="col-md-3" style="font-size:12pt">
+            <p>Status: <u>Testing in Progress</u></p>
+            <p>Total Estimated Price: <u>4/14/17</u></p>
+        </div>
+    </div>
+    <div class="row">
+        <h3>Assays</h3>
+        <table class="table-bordered">
+            <tr>
+                <th>Compound Name</th>
+                <th>Assay Name</th>
+                <th>Status</th>
+                <th>Tests</th>
+                <th>Estimated Price</th>
+            </tr>
+            <tr>
+                <td>Floral Magnesium - 1</td>
+                <td>ProfilingScreen</td>
+                <td>In Progress</td>
+                <td>Test 1 - In Progress <br />Test 2 - In Progress <br />Test 3 - Complete <br />Test 4 - Complete</td>
+                <td>$2,000.00</td>
+            </tr>
+        </table>
+    </div>
+</div>

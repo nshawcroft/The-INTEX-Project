@@ -1,7 +1,105 @@
-﻿
+﻿<link href="~/Content/ProgressBarStyles.css" rel="stylesheet" />
 @{
     ViewBag.Title = "ReviewOrder";
 }
 
-<h2>ReviewOrder</h2>
+<h2>Orders</h2>
+<br />
+
+<div class="container">
+    <div class="row">
+        <div class="stepwizard">
+            <div class="stepwizard-row">
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-default btn-circle">1</button>
+                    <p>In Transit</p>
+                </div>
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-default btn-circle">2</button>
+                    <p>Received</p>
+                </div>
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-default btn-circle">3</button>
+                    <p>Approved for Testing</p>
+                </div>
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-primary btn-circle">1</button>
+                    <p>Testing In Progress</p>
+                </div>
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-default btn-circle">2</button>
+                    <p>Awaiting Analysis</p>
+                </div>
+                <div class="stepwizard-step">
+                    <button type="button" class="btn btn-default btn-circle">3</button>
+                    <p>Complete</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Current Orders</a></li>
+            <li><a href="#">Past Orders</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <br />
+        <div class="col-md-9">
+            <table class="table-bordered" align="center">
+                <tr>
+                    <th>Work Order ID</th>
+                    <th>Customer Name</th>
+                    <th>Order Date</th>
+                    <th>Date Received</th>
+                    <th>Estimated Completion Date</th>
+                    <th style="text-align:center">Status</th>
+                </tr>
+                <tr align="center">
+                    <td>12-531-3</td>
+                    <td>Acme Inc.</td>
+                    <td>4/12/17</td>
+                    <td>4/14/17</td>
+                    <td>4/28/17</td>
+                    <td>Awaiting Analysis</td>
+                </tr>
+                <tr align="center" style="background: lightgreen">
+                    <td>@Html.ActionLink("12-550-3", "CustomerCurrentOrderDetails", "Home", null)</td>
+                    <td>Acme Inc.</td>
+                    <td>4/14/17</td>
+                    <td>4/17/17</td>
+                    <td>5/4/17</td>
+                    <td>Testing In Progress</td>
+                </tr>
+                <tr align="center">
+                    <td>12-544-1</td>
+                    <td>Acme Inc.</td>
+                    <td>4/14/17</td>
+                    <td>4/17/17</td>
+                    <td>5/4/17</td>
+                    <td>Approved For Testing</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-3" style="border-left: 1px solid #ccc">
+            <h4 style="text-align:center"><u>Recently Completed</u></h4>
+            <table class="table">
+                <tr>
+                    <th align="center">Work Order Id</th>
+                    <th align="center">Date Completed</th>
+                </tr>
+                <tr>
+                    <td align="center"><a href="#">12-401-2</a></td>
+                    <td align="center">3/12/17</td>
+                </tr>
+                <tr>
+                    <td align="center"><a href="#">12-380-4</a></td>
+                    <td align="center">3/10/17</td>
+                </tr>
+            </table>
+            <button class="btn" style="float:right">Clear All</button>
+        </div>
+    </div>
+</div>
 
