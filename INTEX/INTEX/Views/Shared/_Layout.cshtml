@@ -17,13 +17,35 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Northwest Labs", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Orders <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Place Order","CustomerOrderInformation")</li>
+                            <li>@Html.ActionLink("View Orders", "ReviewOrder")</li>
+                            <li>@Html.ActionLink("Approve Orders", null)</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manage Customer Account<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Create Customer", "CreateCustomer")</li>
+                            <li>@Html.ActionLink("Look Up Customer", null)</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reports<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>@Html.ActionLink("Test Reports", null)</li>
+                            <li>@Html.ActionLink("Profitability Reports", "ProfitabilityReport" )</li>
+                        </ul>
+                    </li>
+                    <li>@Html.ActionLink("Invoices", null)</li>
+                    <li>@Html.ActionLink("Catalog", null)</li>
+                    <li>@Html.ActionLink("Schedule Tests", "ScheduleTest")</li>
+                    <li>@Html.ActionLink("Scan in Order", "PreScanOrder")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
