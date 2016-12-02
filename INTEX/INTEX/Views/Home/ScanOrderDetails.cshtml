@@ -1,7 +1,49 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "ScanOrderDetails";
 }
+<link href="~/Content/fcss.css" rel="stylesheet" />
+<h2 class="pageheading">Scan Order</h2>
+<div class="row fbox">
+    <h2 class="fFloatCenterM80">Company Information</h2>
+</div>
+<div class="row">
+    <table class="table table-bordered fTableAjuster" align="center">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Qty. on order</th>
+                <th>Qty. received</th>
+                <th width="50px"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Compound 1</td>
+                <td>2</td>
+                <td>2</td>
+                <td><button type="button" class="btn btn-primary">Print barcode</button></td>
+            </tr>
+            <tr>
+                <td>Compound 2</td>
+                <td>1</td>
+                <td>1</td>
+                <td><button type="button" class="btn btn-primary">Print barcode</button></td>
+            </tr>
+            <tr>
+                <td>Compound 3</td>
+                <td>3</td>
+                <td>3</td>
+                <td><button type="button" class="btn btn-primary">Print barcode</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row fMarginTop25">
+    <div class="col-sm-9">
 
-<h2>ScanOrderDetails</h2>
-
+    </div>
+    <div class="col-sm-3">
+        <button type="button" class="btn btn-primary">Print all</button>
+        @Html.ActionLink("Continue", "ScanOrderCompound", "Home", null, new { @class = " btn btn-primary" })
+    </div>
+</div>

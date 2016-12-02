@@ -1,7 +1,155 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "OrderSummary";
 }
 
-<h2>OrderSummary</h2>
+<link href="~/Content/fcss.css" rel="stylesheet" />
+
+<h2 class="pageheading fFloatCenter">Order Summary</h2>
+
+<div class="row">
+    <table class="table table-striped fTableAjuster" align="center">
+        <thead>
+            <tr>
+                <th>Compound</th>
+                <th>Assay</th>
+                <th>Included test</th>
+                <th>price</th>
+                <th>Edit/Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Compound 1 - 1</td>
+                <td>Biochemical Pharmacology (BP)</td>
+                <td>
+                    <label class="form-check-label">
+                        - test 1
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 2
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 3
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 5
+                    </label>
+                </td>
+                <td>$ 2800.00</td>
+                <td>
+                    <a href="#">Edit</a> /
+                    <a href="#">Remove</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Compound 1 - 2</td>
+                <td>DiscoveryScreen®</td>
+                <td>
+                    <label class="form-check-label">
+                        - test 1
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 2
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 3
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 8
+                    </label>
+                </td>
+                <td>$ 1600.00</td>
+                <td>
+                    <a href="#">Edit</a> /
+                    <a href="#">Remove</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Compound 1 - 3</td>
+                <td>ImmunoScreen®</td>
+                <td>
+                    <label class="form-check-label">
+                        - test 1
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 2
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 3
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 5
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 9
+                    </label>
+                </td>
+                <td>$ 2600.00</td>
+                <td>
+                    <a href="#">Edit</a> /
+                    <a href="#">Remove</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Compound 2 - 1</td>
+                <td>Biochemical Pharmacology (BP)</td>
+                <td>
+                    <label class="form-check-label">
+                        - test 1
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 2
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 3
+                    </label>
+                </td>
+                <td>$ 2500.00</td>
+                <td>
+                    <a href="#">Edit</a> /
+                    <a href="#">Remove</a>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <label class="form-check-label">
+                        Total
+                    </label>
+                </td>
+                <td>$ 9500</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row fMarginTop10">
+    <div class="col-sm-offset-2 col-sm-10">
+        <div class="form-check">
+            <label class="form-check-label">
+                <input type="checkbox" class="form-check-input">
+                Terms of Service
+            </label>
+        </div>
+    </div>
+</div>
+<div class="row fMarginTop10">
+    <div class="col-sm-offset-8 col-sm-4">
+        @Html.ActionLink("Back to Order Details", "CustomerOrderInformation", "Home", null, new { @class = " btn btn-primary fMarginRight20" })
+        @Html.ActionLink("Submit Order", "OrderSubmitted", "Home", null, new { @class = " btn btn-primary" })
+    </div>
+</div>
 

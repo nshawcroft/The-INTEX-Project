@@ -1,7 +1,306 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "CustomerOrderInformation";
 }
+<link href="~/Content/fcss.css" rel="stylesheet" />
+<h2 class="pageheading">Customer information</h2>
+<div class="row">
+    <div class="form-group">
+        <label class="col-sm-3 control-label">Company Name:</label>
+        <div class="col-sm-9">
+            <input class="form-control" id="focusedInput" type="text" value="Floral Drugs">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label">Address: </label>
+        <div class="col-sm-9">
+            <input class="form-control" id="focusedInput" type="text" value="600 E 600 N, Provo, 84606, UT">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label">Phone#: </label>
+        <div class="col-sm-9">
+            <input class="form-control" id="focusedInput" type="text" value="(801) 123-4567">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label">Ext.:</label>
+        <div class="col-sm-9">
+            <input class="form-control" id="focusedInput" type="text" value="12345">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label">Agent name:</label>
+        <div class="col-sm-9">
+            <input class="form-control" id="focusedInput" type="text" value="Bill Gates">
+        </div>
+    </div>
+</div>
+<div class="row fBorderTop2 fMarginTop25 fPaddingTop25">
+    <div class="col-sm-2">
+        <button type="button" class="btn btn-arrow-left">Previous</button>
+    </div>
+    <div class="col-sm-8">
+        <h3 class="fFloatCenter fMarginTop5 fheadline">Specify Compound</h3>
+    </div>
+    <div class="col-sm-2">
+        <button type="button" class="btn btn-arrow-right fFloatRight">Next</button>
+    </div>
+</div>
+<div class="row fMarginTop25">
+    <div class="col-sm-9">
+        <div class="form-group">
+            <label class="col-sm-5 control-label">Compound name:</label>
+            <div class="col-sm-7">
+                <input class="form-control" id="focusedInput" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-5 control-label">Compound chemical makeup:</label>
+            <div class="col-sm-7">
+                <input class="form-control" id="focusedInput" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-5 control-label">Maximum tolerance dose:</label>
+            <div class="col-sm-7">
+                <input class="form-control" id="focusedInput" type="text" value="">
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary">Remove compound</button>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+            <label for="exampleTextarea">Additinal details</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+        </div>
+    </div>
+</div>
+<div class="row fBorderTop2 fMarginTop25 fPaddingTop25">
+    <h4 class="fFloatCenter">Select Assays</h4>
+    <p class="fFloatCenter">Please select all assay tests for this compound</p>
+</div>
+<div class="row">
+    <table class="table table-bordered" align="center">
+        <thead>
+            <tr>
+                <th width="25px"></th>
+                <th>Assay name</th>
+                <th>Description</th>
+                <th>Tests included</th>
+                <th>Optional tests</th>
+                <th width="120px">Weight in mg</th>
+                <th>Estimated completion</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                        </label>
+                    </div>
+                </td>
+                <td>ImmunoScreen® (IS)</td>
+                <td>Here goes the description</td>
+                <td>
+                    <label class="form-check-label">
+                        - test 1
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 2
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 3
+                    </label>
+                </td>
+                <td>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            test 4
+                        </label>
+                    </div>
 
-<h2>CustomerOrderInformation</h2>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            test 5
+                        </label>
+                    </div>
 
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            test 6
+                        </label>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input class="form-control" id="focusedInput" type="text" value="">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <p>1/1/2016</p>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            Rush?
+                        </label>
+                    </div>
+                </td>
+                <td>$ 2000</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                        </label>
+                    </div>
+                </td>
+                <td>Biochemical Pharmacology (BP)</td>
+                <td>Here goes the description</td>
+                <td>
+                    <label class="form-check-label">
+                        - test 1
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 2
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 3
+                    </label>
+                <td>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            test 4
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            test 5
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            test 6
+                        </label>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input class="form-control" id="focusedInput" type="text" value="">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <p>2/1/2016</p>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            Rush?
+                        </label>
+                    </div>
+                </td>
+                <td>$ 2500</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                        </label>
+                    </div>
+                </td>
+                <td>DiscoveryScreen® (DS)</td>
+                <td>Here goes the description</td>
+                <td>
+                    <label class="form-check-label">
+                        - test 1
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 2
+                    </label>
+                    <br />
+                    <label class="form-check-label">
+                        - test 3
+                    </label>
+                </td>
+                <td>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            test 4
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            test 5
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            test 6
+                        </label>
+                    </div>
+                </td>
+                <td>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input class="form-control" id="focusedInput" type="text" value="">
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <p>1/6/2016</p>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">
+                            Rush?
+                        </label>
+                    </div>
+                </td>
+                <td>$ 1500</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row fMarginTop10">
+    <div class="col-sm-9">
+        <button type="button" class="btn btn-primary">+ Choose from additional tests</button>
+    </div>
+    <div class="col-sm-3">
+        <h4>Total estimated compound testing price <span class="fheadline">$ 1000</span>*</h4>
+        <br />
+        <h4>Total order price <span class="fheadline">$ 1000</span>*</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-offset-8 col-sm-4">
+        <button type="button" class="btn btn-primary fMarginRight20">Add new compound</button>
+        @Html.ActionLink("Proceed to Checkout", "OrderSummary", "Home", null, new { @class = " btn btn-primary" })
+    </div>
+</div>
+<div class="row">
+    <p class="fDisclaimer">*Disclaimer about price estimate</p>
+</div>

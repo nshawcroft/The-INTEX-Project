@@ -1,7 +1,11 @@
-﻿
-@{
-    ViewBag.Title = "PreScanOrder";
+﻿@{
+    ViewBag.Title = "Scan order";
 }
-
-<h2>PreScanOrder</h2>
+<link href="~/Content/fcss.css" rel="stylesheet" />
+<h2 class="pageheading">Scan Order</h2>
+<div class="row fbox">
+    <h2 class="fFloatCenterM80">Company Information (blank)</h2>
+</div>
+<h2 class="fFloatCenterM80 fBottomMargin">(Please Scan Order)</h2>
+@Html.ActionLink("This button functions as the scan for testing purpose", "ScanOrderDetails", "Home", null, new { @class = " btn btn-primary" })
 
